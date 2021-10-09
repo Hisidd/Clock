@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Design.css">
+    <title>Clock</title>
+</head>
+<body>
+    <!-- <div class="weekname">
+    <div class="date">
+        <span id="dayname">Day</span>
+        <span id="month">Month</span>
+        <span id="daynum">00</span>
+        <span id="year">Year</span>
+        <span id="period">AM</span>
+    </div>
+    </div> -->
+    <section class="container">
+        <div id="clock"></div>
+        <input onchange="setAlarmTime(this.value)" name="alarmTime" type="datetime-local">
+        <div class="controls">
+            <button onclick="setAlarm()" class="button set-alarm">set alarm</button>
+            <button onclick="clearAlarm()" class="button clear-alarm">clear alarm</button>
+        </div>
+    </section>
+    <script src="code.js"></script>
+</body>
+</html>
